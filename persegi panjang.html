@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14 september</title>
+    <style>
+        .calculator-container{
+            background-color: black;
+            color: azure;
+            width: 500px;
+            padding: 50px;
+            margin: auto;
+            border: 3px solid gray;
+        }
+        button{
+            background-color: azure;
+            color: black;
+            border: none;
+            min-width: 100px;
+            min-height: 50px;
+            border-radius: 30px;
+        }
+        button-hover{
+            background-color: gray;
+            
+            cursor: pointer;
+            color: aqua;
+
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <center>
+            <div class="calculator-container">
+                <h1>Calculator Persegi panjang</h1>
+        
+                <p>panjang in cm</p>
+                <input class="height-input-field" type="text">
+        
+                <p>lebar in cm</p>
+                <input class="weight-input-field" type="text"><br>
+                <br>
+                <br>
+                <button onclick="myFunction()" class="Calculate">Calculate</button>
+            </div>
+        </center>
+        <script >
+            var heightInput = document.querySelector(".height-input-field");
+var weightInput = document.querySelector(".weight-input-field");
+var calculateButton = document.querySelector(".calculate");
+var BMI, height, weight;
+
+function myFunction() {
+    height = heightInput.value;
+    weight = weightInput.value;
+
+    BMI = height*weight;
+
+
+
+    alert("bmi anda adalah = "+  BMI);
+}
+        </script>
+    </body>
+</body>
+</html>
